@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap%27');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu',sans-serif;
+}
+body{
+    overflow: hidden;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 184);
+}
+section .blur_clr{
+    position: absolute;
+    filter: blur(150px);
+}
+section .blur_clr:nth-child(1){
+    background: rgb(249, 249, 163);
+    width: 500px;
+    height: 500px;
+    top: -250px;
+    right: -50px;
+}
+section .blur_clr:nth-child(2){
+    background: rgb(249, 249, 163);
+    width: 300px;
+    height: 300px;
+    bottom: -150px;
+    left: -100px;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 100px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    position: relative;
+    font-size: 2.5em;
+    color: red;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+header .nav{
+    position: relative;
+    display: flex;
+}
+header .nav li{
+   list-style: none;
+   margin: 0 10px 0 10px;
+}
+header .nav li a{
+    color: brown;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+header .nav li a:hover{
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.11);
+}
+header .Button{
+    background: rgba(255, 107, 33, 0.875);
+    color: black;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 11px;
+    transition: 0.5s;  
+}
+
+header .Button:hover{
+    transform: scale(0.9);
+
+}
+.content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content .contentBx{
+    max-width: 500px;
+
+}
+
+.content .contentBx h1{
+    font-size: 36px;
+    color: black;
+    line-height: 1em;
+    margin: 10px;
+}
+
+.content .contentBx p{
+    font-size: 1em;
+    color: black;
+    line-height: 1em;
+    margin: 30px 10px;
+}
+
+.content .contentBx .Button{
+    background: rgba(255, 86, 2, 0.896);
+    color: black ;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: 0.5s;
+    margin:  10px;
+}
+
+.content .contentBx .Button:hover{
+    background: #fff;
+    color: #ff002b;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.11);
+}
+
+.infoBx{
+    position: absolute;
+    top: 525px;
+    /*bottom: 100px;
+    left: 140px; */
+    align-self: auto;
+    
+    display: flex;
+}
+
+.infoBx .box{
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.infoBx .box i{
+    font-size: 1.6em;
+    color: #8a2435;
+    margin: 10px;
+
+}
+
+.infoBx .box h4{
+    font-size: 1.3em;
+    margin: 5px 0;
+}
+
+.infoBx .box p{
+    font-size: 15px;
+
+}
